@@ -7,5 +7,3 @@
   title = "Michael5Collins" # just for the sake of showing this is possible
   LanguageName = "Português"
   weight = 2
-
-  # tip: assign the default language the lowest Weight
