@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cybersecurity on Michael Collins</title>
+    <title>Cybersecurity on Michael5Collins</title>
     <link>http://localhost:1313/categories/cybersecurity/</link>
-    <description>Recent content in Cybersecurity on Michael Collins</description>
+    <description>Recent content in Cybersecurity on Michael5Collins</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Michael Collins</copyright>
@@ -17,7 +17,7 @@
       <description>
         
           
-            In this post, I share my experience of enhancing my digital security by using Solokey and U2F authentication. Discover how these security keys and two-factor authentication methods can help protect your online accounts from unauthorized access.
+            I share my experience of enhancing my digital security by using Solokey and U2F authentication. Discover how these security keys and two-factor authentication methods can help protect your online accounts from unauthorized access.
           
           
         

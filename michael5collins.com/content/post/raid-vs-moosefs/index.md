@@ -1,7 +1,7 @@
 ---
 title: 'RAID vs MooseFS'
 description: 'Why RAID is putting your business at risk and you should consider switching to MooseFS.'
-summary: "In this post, we compare RAID and MooseFS storage solutions, highlighting the risks associated with RAID and the benefits of switching to MooseFS. Discover how MooseFS offers enhanced redundancy, reliability, scalability, performance, and data integrity for your business's storage needs."
+summary: "Comparing RAID and MooseFS storage solutions, highlighting the risks associated with RAID and the benefits of switching to MooseFS. Discover how MooseFS offers enhanced redundancy, reliability, scalability, performance, and data integrity for your business's storage needs."
 date: '2023-02-27'
 aliases:
 - raid-vs-moosefs-comparison

@@ -1,10 +1,10 @@
 [en]
-  title = "Michael Collins"
+  title = "Michael5Collins"
   LanguageName = "English"
   weight = 1
 
 [pt]
-  title = "Michael Collins" # just for the sake of showing this is possible
+  title = "Michael5Collins" # just for the sake of showing this is possible
   LanguageName = "Português"
   weight = 2
 

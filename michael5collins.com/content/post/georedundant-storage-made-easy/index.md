@@ -1,7 +1,7 @@
 ---
 title: "Ceph's Stretch Mode: Georedundant Storage Made Easy!"
 description: "Georedundant storage made easy, with Ceph's little known 'Stretch Mode' feature."
-summary: "In this post, we explore Ceph's powerful 'Stretch Mode' feature, which simplifies georedundant storage setup. Learn how Stretch Mode enables efficient data replication across failure domains, ensuring data redundancy and integrity for your storage infrastructure."
+summary: "We explore Ceph's powerful 'Stretch Mode' feature, which simplifies georedundant storage setup. Learn how Stretch Mode enables efficient data replication across failure domains, ensuring data redundancy and integrity for your storage infrastructure."
 date: '2023-11-28'
 aliases:
 - ceph-stretch-mode-georedundant-storage

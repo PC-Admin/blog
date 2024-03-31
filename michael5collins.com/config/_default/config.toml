@@ -22,3 +22,6 @@ series = "series"
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
+
+# Custom CSS 
+#customCSS = ["css/custom.css"]

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Michael Collins</title>
+    <title>Michael5Collins</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Michael Collins</description>
+    <description>Recent content on Michael5Collins</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Michael Collins</copyright>
-    <lastBuildDate>Tue, 28 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ceph&#39;s Stretch Mode: Georedundant Storage Made Easy!</title>
       <link>http://localhost:1313/post/georedundant-storage-made-easy/</link>
@@ -17,7 +17,7 @@
       <description>
         
           
-            In this post, we explore Ceph&#39;s powerful &#39;Stretch Mode&#39; feature, which simplifies georedundant storage setup. Learn how Stretch Mode enables efficient data replication across failure domains, ensuring data redundancy and integrity for your storage infrastructure.
+            We explore Ceph&#39;s powerful &#39;Stretch Mode&#39; feature, which simplifies georedundant storage setup. Learn how Stretch Mode enables efficient data replication across failure domains, ensuring data redundancy and integrity for your storage infrastructure.
           
           
         
@@ -33,7 +33,7 @@
       <description>
         
           
-            In this post, I share my experience of enhancing my digital security by using Solokey and U2F authentication. Discover how these security keys and two-factor authentication methods can help protect your online accounts from unauthorized access.
+            I share my experience of enhancing my digital security by using Solokey and U2F authentication. Discover how these security keys and two-factor authentication methods can help protect your online accounts from unauthorized access.
           
           
         
@@ -49,7 +49,7 @@
       <description>
         
           
-            In this post, we compare RAID and MooseFS storage solutions, highlighting the risks associated with RAID and the benefits of switching to MooseFS. Discover how MooseFS offers enhanced redundancy, reliability, scalability, performance, and data integrity for your business&#39;s storage needs.
+            Comparing RAID and MooseFS storage solutions, highlighting the risks associated with RAID and the benefits of switching to MooseFS. Discover how MooseFS offers enhanced redundancy, reliability, scalability, performance, and data integrity for your business&#39;s storage needs.
           
           
         

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Moosefs on Michael Collins</title>
+    <title>Moosefs on Michael5Collins</title>
     <link>http://localhost:1313/tags/moosefs/</link>
-    <description>Recent content in Moosefs on Michael Collins</description>
+    <description>Recent content in Moosefs on Michael5Collins</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Michael Collins</copyright>
@@ -17,7 +17,7 @@
       <description>
         
           
-            In this post, we compare RAID and MooseFS storage solutions, highlighting the risks associated with RAID and the benefits of switching to MooseFS. Discover how MooseFS offers enhanced redundancy, reliability, scalability, performance, and data integrity for your business&#39;s storage needs.
+            Comparing RAID and MooseFS storage solutions, highlighting the risks associated with RAID and the benefits of switching to MooseFS. Discover how MooseFS offers enhanced redundancy, reliability, scalability, performance, and data integrity for your business&#39;s storage needs.
           
           
         

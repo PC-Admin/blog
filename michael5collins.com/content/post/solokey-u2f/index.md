@@ -1,7 +1,7 @@
 ---
 title: 'Solokey U2F'
 description: 'How I secured my digital life with Solokey and U2F authentication.'
-summary: "In this post, I share my experience of enhancing my digital security by using Solokey and U2F authentication. Discover how these security keys and two-factor authentication methods can help protect your online accounts from unauthorized access."
+summary: "I share my experience of enhancing my digital security by using Solokey and U2F authentication. Discover how these security keys and two-factor authentication methods can help protect your online accounts from unauthorized access."
 date: '2023-03-12'
 aliases:
 - solokey-u2f-authentication
