@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Hosting on Michael Collins</title>
+    <link>http://localhost:1313/tags/web-hosting/</link>
+    <description>Recent content in Web Hosting on Michael Collins</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© Michael Collins</copyright><atom:link href="http://localhost:1313/tags/web-hosting/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

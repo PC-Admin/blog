@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Performance on Michael Collins</title>
+    <link>http://localhost:1313/tags/performance/</link>
+    <description>Recent content in Performance on Michael Collins</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© Michael Collins</copyright>
+    <lastBuildDate>Mon, 27 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAID vs MooseFS</title>
+      <link>http://localhost:1313/post/raid-vs-moosefs/</link>
+      <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/raid-vs-moosefs/</guid>
+      <description>
+        
+          
+            In this post, we compare RAID and MooseFS storage solutions, highlighting the risks associated with RAID and the benefits of switching to MooseFS. Discover how MooseFS offers enhanced redundancy, reliability, scalability, performance, and data integrity for your business&#39;s storage needs.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
