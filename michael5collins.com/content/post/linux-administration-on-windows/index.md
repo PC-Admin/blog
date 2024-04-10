@@ -29,7 +29,7 @@ tags:
 
 Since venturing into Linux administration, Ubuntu has always been my daily driver. It's minimal, can run on very little RAM and seems to 'just work' when doing various administrative tasks.
 
-However, for my new job I was handed a Windows 10 machine, I was suddenly caught in a new environment with none of the tools I was used too. I had never even connected to a remote server off a Windows machine before. My initial experience was frustrating and I had to spend a while learning how to get things going.
+However, for my new job I was handed a Windows 10 machine, I was suddenly caught up in a new environment with none of the tools I was used to. I had never even connected to a remote server off a Windows machine before. My initial experience was frustrating and I had to spend a while learning how to get things going.
 
 This article summarises what I've learnt and how I was able to configure my Windows machine to make it as smooth as possible.
 
@@ -72,9 +72,9 @@ PS C:\Users\mcollins1> winget install -e --id Git.Git
 
 ---
 
-Without any extra configuration Git on Windows will replace the Linux line endings on your files, this will break any scripts that you're trying to run on a Linux machine, requiring you to manually run 'dos2unix' against them.
+Without any extra configuration, Git on Windows will replace the Linux line endings on your files. This will break any scripts that you're trying to run on a Linux machine, requiring you to manually run 'dos2unix' against them.
 
-Luckily, Git can be configured to not perform these automatic conversions and to always use Linux line endings:
+Luckily, Git can be configured not to perform these automatic conversions and to always use Linux line endings:
 ```
 PS C:\Users\mcollins1> git config --global core.autocrlf false
 PS C:\Users\mcollins1> git config --global core.eol lf
@@ -85,7 +85,7 @@ PS C:\Users\mcollins1> git config --global core.eol lf
 
 ---
 
-Visual Studio by default will also save edited files with Windows line endings. To prevent Visual Studio from doing this, we can adjust it's settings to make sure that it also uses Linux line endings. Go:
+By default, Visual Studio will also save edited files with Windows line endings. To prevent Visual Studio from doing this, we can adjust its settings to make sure that it also uses Linux line endings. Go:
 
 File > Preferences > Settings
 
@@ -134,7 +134,7 @@ Cloning into 'acacia-ansible'...
 remote: Enumerating objects: 201, done.
 remote: Counting objects: 100% (201/201), done.
 remote: Compressing objects: 100% (158/158), done.
-Rremote: Total 201 (delta 85), reused 0 (delta 0), pack-reused 0
+remote: Total 201 (delta 85), reused 0 (delta 0), pack-reused 0
 Receiving objects: 100% (201/201), 27.82 KiB | 4.64 MiB/s, done.
 Resolving deltas: 100% (85/85), done.
 ```
