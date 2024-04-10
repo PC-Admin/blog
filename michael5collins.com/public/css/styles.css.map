@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/home/pcadmin/MyVault/PSP_Repos/michael5collins.com/michael5collins.com",
+	"sourceRoot": "/home/pcadmin/MyVault/Michael5Collins/michael5collins.com/michael5collins.com",
 	"sources": [
 		"/home/pcadmin/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/chipzoller/hugo-clarity@v0.0.0-20240305073313-119e1ca7eed7/assets/sass/main.sass",
 		"../../../../.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/chipzoller/hugo-clarity@v0.0.0-20240305073313-119e1ca7eed7/assets/sass/_variables.sass",

@@ -7,7 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Michael Collins</copyright>
-    <lastBuildDate>Tue, 28 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Administration on Windows</title>
+      <link>http://localhost:1313/post/linux-administration-on-windows/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/linux-administration-on-windows/</guid>
+      <description>
+        
+          
+            How I managed to configure my Windows 10 machine to make Linux administration tasks as smooth as possible. Learn how I configured SSH, terminal, Git and Visual Studio for a user experience that was similar to the Ubuntu machines I&#39;m used too.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Ceph&#39;s Stretch Mode: Georedundant Storage Made Easy!</title>
       <link>http://localhost:1313/post/georedundant-storage-made-easy/</link>
