@@ -8,11 +8,11 @@ aliases:
 author: 'Michael Collins'
 usePageBundles: true
 
-featureImage: 'icon.png'
+featureImage: './play_store.png'
 # featureImageAlt: 'Description of image' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
-thumbnail: 'icon.png' # Image in lists of posts.
-shareImage: 'icon.png' # For SEO and social media snippets.
+thumbnail: './play_store.png' # Image in lists of posts.
+shareImage: './play_store.png' # For SEO and social media snippets.
 
 categories:
 - news
@@ -23,11 +23,12 @@ tags:
 
 ---
 
+
 Today we’re proud to announce an expansion to Perthchat’s service, our new Android application!
 
 This feature rich Matrix client is a fork of the popular [Element Android](https://github.com/vector-im/element-android/) client that’s been re-branded with our logo and name. It was created as a promotional tool to help grow the service. The source code of our app can be found [here](https://gitlab.com/perthchat.org/element-android-perthchat), we’ve also published the [compilation tool](https://gitlab.com/perthchat.org/compile-matrix-clients) we use for compiling (creating) the app.
 
-![The Perthchat App has been published on Google Play.](./play_store.png)
+![The Perthchat App](./icon.png)
 
 Perthchat was started in 2017 and is one of the larger Matrix instances in Australia. This service was created to provide a secure, open source and ad-free messaging experience. The service is non-commercial and run by volunteers from the community.
 
@@ -43,6 +44,8 @@ Matrix itself is an open protocol and Matrix servers are federated just like ema
 ## Is this an April Fool’s Day joke?
 
 No, this new app just happened to be released on April 1st… we swear!
+
+![The Perthchat App has been published on Google Play.](./play_store.png)
 
 ---
 
@@ -70,7 +73,9 @@ Signer #1 public key MD5 digest: c57a25a69257bfcd38d53915281445ac
 ...
 ```
 
-If the digest values you see are the same listed here, you can be sure the download is authentic.---
+If the digest values you see are the same listed here, you can be sure the download is authentic.
+
+---
 
 
 ## You’re Australian! Isn’t this app going to be backdoored because of Access Laws?
