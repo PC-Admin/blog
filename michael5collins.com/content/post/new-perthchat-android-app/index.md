@@ -18,6 +18,8 @@ categories:
 - news
 tags:
 - software
+- perthchat
+- android
 
 ---
 

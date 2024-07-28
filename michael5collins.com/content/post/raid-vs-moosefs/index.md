@@ -15,11 +15,12 @@ thumbnail: 'moosefs.png' # Image in lists of posts.
 shareImage: 'moosefs.png' # For SEO and social media snippets.
 
 categories:
-- distributed storage
+- technical
 tags:
 - raid
 - moosefs
 - distributed storage
+- linux
 ---
 
 

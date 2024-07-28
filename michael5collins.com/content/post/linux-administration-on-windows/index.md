@@ -15,9 +15,10 @@ thumbnail: 'win10-iamjcat-dd0dnmn.png' # Image in lists of posts.
 shareImage: 'win10-iamjcat-dd0dnmn.png' # For SEO and social media snippets.
 
 categories:
-- linux administration
+- technical
 tags:
 - windows
+- linux
 - linux administration
 - devops
 ---

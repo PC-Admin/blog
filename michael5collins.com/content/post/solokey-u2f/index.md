@@ -15,11 +15,12 @@ thumbnail: 'solokey-diagram.png' # Image in lists of posts.
 shareImage: 'solokey-diagram.png' # For SEO and social media snippets.
 
 categories:
-- cybersecurity
+- technical
 tags:
 - security keys
 - cybersecurity
 - 2fa
+- linux
 ---
 
 

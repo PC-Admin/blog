@@ -15,11 +15,12 @@ thumbnail: 'ceph-cover.png' # Image in lists of posts.
 shareImage: 'ceph-cover.png' # For SEO and social media snippets.
 
 categories:
-- distributed storage
+- technical
 tags:
 - ceph
 - georedundancy
 - distributed storage
+- linux
 ---
 
 
