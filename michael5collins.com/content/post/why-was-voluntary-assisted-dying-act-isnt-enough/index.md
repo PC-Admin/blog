@@ -1,7 +1,7 @@
 ---
 title: "Why WA's Voluntary Assisted Dying Act Isn't Enough"
 description: "Why WA's Voluntary Assisted Dying Act Isn't Enough"
-summary: "Introduced in 2019 the ‘Voluntary Assisted Dying Act’ allows patients who are already "acutely dying" to receive assistance in dying. You only qualify for it providing that you are... "
+summary: "Introduced in 2019 the ‘Voluntary Assisted Dying Act’ allows patients who are already "acutely dying" to receive assistance in dying. You only qualify for it providing that you are..."
 date: '2022-11-22'
 aliases:
 - wa-voluntary-assisted-dying
@@ -11,8 +11,8 @@ usePageBundles: true
 featureImage: 'Young_aileen.png'
 # featureImageAlt: 'Description of image' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
-thumbnail: 'Young_aileen.png' # Image in lists of posts.
-shareImage: 'Young_aileen.png' # For SEO and social media snippets.
+thumbnail: 'Young_aileen.jpg' # Image in lists of posts.
+shareImage: 'Young_aileen.jpg' # For SEO and social media snippets.
 
 categories:
 - news
@@ -20,7 +20,6 @@ tags:
 - software
 
 ---
-
 
 **Warning: This article contains references to death and suicide, if this is a problem for you then please don't read it. **
 
