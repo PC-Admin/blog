@@ -4,7 +4,7 @@ description: "YouTube-DL Removed From GitHub After DMCA Notice"
 summary: "Friday night on the 23rd of October the ‘Recording Industry Association of America, Inc. (RIAA)’ sent a DMCA request to GitHub asking that the popular YouTube downloading software ‘youtube-dl’ be taken down. "
 date: '2020-10-24'
 aliases:
-- ceph-stretch-mode-georedundant-storage
+- youtube-dl-dcma-takedown
 author: 'Michael Collins'
 usePageBundles: true
 
