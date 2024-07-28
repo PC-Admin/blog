@@ -31,11 +31,11 @@ Youtube-DL is licensed under the [Unlicense](https://en.wikipedia.org/wiki/Unlic
 
 The notice claimed the youtube-dl software was a ‘Anticircumvention Violation’ as well as a violation of YouTube’s terms of service. It requested that:
 
-_“In light of the above noted copyright infringements and anticircumvention violations, we ask that you immediately take down and disable access to the youtube-dl source code at all of its locations where it is hosted on GitHub, including without limitation those locations in the representative list set forth above.”_
+<i>“In light of the above noted copyright infringements and anticircumvention violations, we ask that you immediately take down and disable access to the youtube-dl source code at all of its locations where it is hosted on GitHub, including without limitation those locations in the representative list set forth above.”</i>
 
 It also draws attention to the examples featured in the youtube-dl source code which include examples of how to download copyrighted music from Icona Pop, Justin Timberlake and Taylor Swift. The notice also claimed that:
 
-_“The clear purpose of this source code is to (i) circumvent the technological protection measures used by authorised streaming services such as YouTube, and (ii) reproduce and distribute music videos and sound recordings owned by our member companies without authorization for such use.”_
+<i>“The clear purpose of this source code is to (i) circumvent the technological protection measures used by authorised streaming services such as YouTube, and (ii) reproduce and distribute music videos and sound recordings owned by our member companies without authorization for such use.”</i>
 
 Although the youtube-dl software cannot be used to distribute music, only to reproduce it. It’s also possible to use youtube-dl to reproduce public domain or creative commons work that people do have the right to copy and redistribute.
 
@@ -47,24 +47,23 @@ For now the software remains widely distributed and used. It can still be access
 
 ## Perthchat News Interview With Philipp Hagemeister
 
-
 I reached out to previous maintainer Phillip Hagemeister, who had this to say about the incident:
 
 **Are you worried you will see any personal damages from this?**
 
-    I received a cease and desist letter from German lawyers a couple of weeks ago. However, there are a number of technical inaccuracies in that letter; in particular the lawyers did not seem to have understood that my maintainership of youtube-dl ended years ago. Since this is an ongoing legal issue, that's all I'll say about that.
+<i>I received a cease and desist letter from German lawyers a couple of weeks ago. However, there are a number of technical inaccuracies in that letter; in particular the lawyers did not seem to have understood that my maintainership of youtube-dl ended years ago. Since this is an ongoing legal issue, that's all I'll say about that.</i>
 
 **Are you going to change the examples in the source code and remove references to the copyrighted works of Icona Pop, Justin Timberlake and Taylor Swift?**
 
-    I am no longer involved in the youtube-dl project, but if I were:
+<i>I am no longer involved in the youtube-dl project, but if I were:
 
-    I would remove the test cases. These videos were never fully downloaded anyways; they are automated test cases where the test just downloads the first 10KB, which amounts to a couple of seconds at most. This is certainly fair use, but the project is fully functional without these test cases.
+I would remove the test cases. These videos were never fully downloaded anyways; they are automated test cases where the test just downloads the first 10KB, which amounts to a couple of seconds at most. This is certainly fair use, but the project is fully functional without these test cases.
 
-    I would remove the referenced code, even though I believe it to be legal. It's an extremely small part of youtube-dl (which despite the name supports over 1000 other sites apart from YouTube) and not worth the trouble for me. I respect those who argue that the code should remain unchanged though, or that only music videos should be excluded.
+I would remove the referenced code, even though I believe it to be legal. It's an extremely small part of youtube-dl (which despite the name supports over 1000 other sites apart from YouTube) and not worth the trouble for me. I respect those who argue that the code should remain unchanged though, or that only music videos should be excluded.</i>
 
 **Do you have any other comments about the incident?**
 
-| youtube-dl is very valuable for many purposes: It enables video playback on devices where the web interface is not suitable (e.g. Raspberry Pis), it allows playback for disabled users, it powers research projects which analyze videos, and you can just watch videos when there may be no stable Internet connection. This should be unequivocally allowed and even supported for the good of society, while keeping the ability of content producers to benefit from their creations.
+<i>youtube-dl is very valuable for many purposes: It enables video playback on devices where the web interface is not suitable (e.g. Raspberry Pis), it allows playback for disabled users, it powers research projects which analyze videos, and you can just watch videos when there may be no stable Internet connection. This should be unequivocally allowed and even supported for the good of society, while keeping the ability of content producers to benefit from their creations.
 
 | In my time as maintainer, I declined numerous requests to support piracy sites and DRM-protected content. I can not speak for the project in the last years, but from what I've seen that policy has remained. To me, this is the right policy any legal project should follow.
 
@@ -74,7 +73,7 @@ I reached out to previous maintainer Phillip Hagemeister, who had this to say ab
 
 | My thanks go to everybody who has contributed so far to youtube-dl, but especially to the current maintainer Sergey. I hope somebody takes up the flag, source code, and distribution of youtube-dl, but I understand if Sergey doesn't want to deal with all of this trouble. Due to other personal & open-source commitments as well as the ongoing legal affairs, I'm sad it can't be me. I wish the project all the best.
 
-| Copyright law is always a balance between creators and society. When it comes to being able to watch videos no matter the device or Internet connection, and doing so for non-commercial purposes, the balance we should strive for seems clear to me; it should allow youtube-dl.
+| Copyright law is always a balance between creators and society. When it comes to being able to watch videos no matter the device or Internet connection, and doing so for non-commercial purposes, the balance we should strive for seems clear to me; it should allow youtube-dl.</i>
 
 ---
 
