@@ -19,8 +19,8 @@ categories:
 tags:
 - windows
 - linux
-- linux administration
 - devops
+- guide
 ---
 
 
