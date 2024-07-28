@@ -21,7 +21,7 @@ tags:
 
 ---
 
-{{ youtube ppMtsKb6mw4 }}
+{{< youtube ppMtsKb6mw4 >}}
 
 **Disclaimer: We are not confirming the claims of anyone interviewed in this video.**
 
