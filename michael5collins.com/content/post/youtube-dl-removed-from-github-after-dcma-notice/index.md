@@ -31,17 +31,17 @@ Youtube-DL is licensed under the [Unlicense](https://en.wikipedia.org/wiki/Unlic
 
 The notice claimed the youtube-dl software was a ‘Anticircumvention Violation’ as well as a violation of YouTube’s terms of service. It requested that:
 
-*“In light of the above noted copyright infringements and anticircumvention violations, we ask that you immediately take down and disable access to the youtube-dl source code at all of its locations where it is hosted on GitHub, including without limitation those locations in the representative list set forth above.”*
+_“In light of the above noted copyright infringements and anticircumvention violations, we ask that you immediately take down and disable access to the youtube-dl source code at all of its locations where it is hosted on GitHub, including without limitation those locations in the representative list set forth above.”_
 
 It also draws attention to the examples featured in the youtube-dl source code which include examples of how to download copyrighted music from Icona Pop, Justin Timberlake and Taylor Swift. The notice also claimed that:
 
-*“The clear purpose of this source code is to (i) circumvent the technological protection measures used by authorised streaming services such as YouTube, and (ii) reproduce and distribute music videos and sound recordings owned by our member companies without authorization for such use.”*
+_“The clear purpose of this source code is to (i) circumvent the technological protection measures used by authorised streaming services such as YouTube, and (ii) reproduce and distribute music videos and sound recordings owned by our member companies without authorization for such use.”_
 
 Although the youtube-dl software cannot be used to distribute music, only to reproduce it. It’s also possible to use youtube-dl to reproduce public domain or creative commons work that people do have the right to copy and redistribute.
 
 For now the software remains widely distributed and used. It can still be accessed through the [existing yt-dl.org website](https://yt-dl.org/download.html). Last year the RIAA was [able to get 5 YouTube ‘ripper’ sites removed from the Google search engine.](https://torrentfreak.com/riaa-delists-youtube-rippers-from-google-using-rare-anti-circumvention-notices-191108/)
 
-![The gpg keys of the last authors.](New_DL_Page.png)
+![The software continued to be hosted off the authors site after the takedown.](New_DL_Page.png)
 
 ---
 
@@ -64,17 +64,17 @@ I reached out to previous maintainer Phillip Hagemeister, who had this to say ab
 
 **Do you have any other comments about the incident?**
 
-    youtube-dl is very valuable for many purposes: It enables video playback on devices where the web interface is not suitable (e.g. Raspberry Pis), it allows playback for disabled users, it powers research projects which analyze videos, and you can just watch videos when there may be no stable Internet connection. This should be unequivocally allowed and even supported for the good of society, while keeping the ability of content producers to benefit from their creations.
+| youtube-dl is very valuable for many purposes: It enables video playback on devices where the web interface is not suitable (e.g. Raspberry Pis), it allows playback for disabled users, it powers research projects which analyze videos, and you can just watch videos when there may be no stable Internet connection. This should be unequivocally allowed and even supported for the good of society, while keeping the ability of content producers to benefit from their creations.
 
-    In my time as maintainer, I declined numerous requests to support piracy sites and DRM-protected content. I can not speak for the project in the last years, but from what I've seen that policy has remained. To me, this is the right policy any legal project should follow.
+| In my time as maintainer, I declined numerous requests to support piracy sites and DRM-protected content. I can not speak for the project in the last years, but from what I've seen that policy has remained. To me, this is the right policy any legal project should follow.
 
-    In some locations, judges seem to have interpreted the law to be something it does not say. It should be clarified – whether by judges or lawmakers – to what is written down already and was intended: Proper DRM should not be subverted except for archiving purposes, but anything else is clearly allowed. Personally, I would go so far to require DRM schemes to decode timestamp and licenses to enable archiving. That's not to say I think that DRM subversion should be illegal in the first place, but that's a political rather than a legal issue.
+| In some locations, judges seem to have interpreted the law to be something it does not say. It should be clarified – whether by judges or lawmakers – to what is written down already and was intended: Proper DRM should not be subverted except for archiving purposes, but anything else is clearly allowed. Personally, I would go so far to require DRM schemes to decode timestamp and licenses to enable archiving. That's not to say I think that DRM subversion should be illegal in the first place, but that's a political rather than a legal issue.
 
-    GitHub is in no way to blame. They hosted the project for free, and we should thank them for that. I can understand that some people don't want to deal with the RIAA – maybe they are not even located in the US – and simply move the source code somewhere else, but I greatly appreciate GitHub's services and support. I hope they can work with future maintainer of youtube-dl to get the project back on GitHub.
+| GitHub is in no way to blame. They hosted the project for free, and we should thank them for that. I can understand that some people don't want to deal with the RIAA – maybe they are not even located in the US – and simply move the source code somewhere else, but I greatly appreciate GitHub's services and support. I hope they can work with future maintainer of youtube-dl to get the project back on GitHub.
 
-    My thanks go to everybody who has contributed so far to youtube-dl, but especially to the current maintainer Sergey. I hope somebody takes up the flag, source code, and distribution of youtube-dl, but I understand if Sergey doesn't want to deal with all of this trouble. Due to other personal & open-source commitments as well as the ongoing legal affairs, I'm sad it can't be me. I wish the project all the best.
+| My thanks go to everybody who has contributed so far to youtube-dl, but especially to the current maintainer Sergey. I hope somebody takes up the flag, source code, and distribution of youtube-dl, but I understand if Sergey doesn't want to deal with all of this trouble. Due to other personal & open-source commitments as well as the ongoing legal affairs, I'm sad it can't be me. I wish the project all the best.
 
-    Copyright law is always a balance between creators and society. When it comes to being able to watch videos no matter the device or Internet connection, and doing so for non-commercial purposes, the balance we should strive for seems clear to me; it should allow youtube-dl.
+| Copyright law is always a balance between creators and society. When it comes to being able to watch videos no matter the device or Internet connection, and doing so for non-commercial purposes, the balance we should strive for seems clear to me; it should allow youtube-dl.
 
 ---
 
