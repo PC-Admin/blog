@@ -1,7 +1,7 @@
 ---
 title: "Why WA's Voluntary Assisted Dying Act Isn't Enough"
 description: "Why WA's Voluntary Assisted Dying Act Isn't Enough"
-summary: "Introduced in 2019 the ‘Voluntary Assisted Dying Act’ allows patients who are already "acutely dying" to receive assistance in dying. You only qualify for it providing that you are..."
+summary: 'Introduced in 2019 the Voluntary Assisted Dying Act allows patients who are already "acutely dying" to receive assistance in dying. You only qualify for it providing that you are...'
 date: '2022-11-22'
 aliases:
 - wa-voluntary-assisted-dying
