@@ -2,17 +2,17 @@
 title: "Vertical Scaling with Ceph RBD, a Poor Man's MooseFSPro"
 description: "Giving myself some rudimentary HA with my MooseFS community edition cluster."
 summary: "Yadda yadda Ceph RBD, moosefs community bla bla"
-date: '2023-11-28'
+date: '2024-09-03'
 aliases:
 - moosefs-community-ha
 author: 'Michael Collins'
 usePageBundles: true
 
-featureImage: 'ceph-cover.png'
+featureImage: 'moosefs-proxmox-ai-garbage.png'
 # featureImageAlt: 'Description of image' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
-thumbnail: 'ceph-cover.png' # Image in lists of posts.
-shareImage: 'ceph-cover.png' # For SEO and social media snippets.
+thumbnail: 'moosefs-proxmox-ai-garbage.png' # Image in lists of posts.
+shareImage: 'moosefs-proxmox-ai-garbage.png' # For SEO and social media snippets.
 
 categories:
 - technical
@@ -33,7 +33,7 @@ MooseFS community edition is great, but you don't get the high availability feat
 
 As a cheaper alternative, I'll be setting up Ceph RBD with Proxmox and using that to give my single master node some basic fail over.
 
-[My humble little MooseFS cluster.](./moosefs-community-edition.png)
+![My humble little MooseFS cluster.](./moosefs-community-edition.png)
 
 If you want to learn more about MooseFS you can also checkout my [comparison with RAID](https://michael5collins.com/post/raid-vs-moosefs/).
 
@@ -144,7 +144,7 @@ pcadmin@gastly:~$ sudo pveceph mon create
 ...
 ```
 
-[Here we see all 3x monitors are now up and have mad a quorum.](./finished-adding-monitors.png)
+![Here we see all 3x monitors are now up and have mad a quorum.](./finished-adding-monitors.png)
 
 We now see the Ceph section in the Proxmox GUI is alive and giving us a status now.
 
@@ -159,7 +159,7 @@ starting service 'ceph-mgr@gastly.service'
 starting service 'ceph-mgr@jigglypuff.service'
 ```
 
-[Here we see out new monitors and managers on all 3x hosts.](./list-mons-mgrs.png)
+![Here we see out new monitors and managers on all 3x hosts.](./list-mons-mgrs.png)
 
 
 
@@ -196,20 +196,10 @@ eevee:  stderr: 10+0 records in
 eevee: 10+0 records out
 eevee:  stderr: 10485760 bytes (10 MB, 10 MiB) copied, 0.0194067 s, 540 MB/s
 eevee: --> Zapping successful for: <Raw Device: /dev/nvme0n1>
-jigglypuff: --> Zapping: /dev/nvme0n1
-jigglypuff: Running command: /usr/bin/dd if=/dev/zero of=/dev/nvme0n1 bs=1M count=10 conv=fsync
-gastly: --> Zapping: /dev/nvme0n1
-jigglypuff:  stderr: 10+0 records in
-jigglypuff: 10+0 records out
-jigglypuff:  stderr: 10485760 bytes (10 MB, 10 MiB) copied, 0.02234 s, 469 MB/s
+...
 jigglypuff: --> Zapping successful for: <Raw Device: /dev/nvme0n1>
-gastly: Running command: /usr/bin/dd if=/dev/zero of=/dev/nvme0n1 bs=1M count=10 conv=fsync
-gastly:  stderr: 10+0 records in
-gastly: 10+0 records out
-gastly:  stderr: 10485760 bytes (10 MB, 10 MiB) copied, 0.0254186 s, 413 MB/s
+...
 gastly: --> Zapping successful for: <Raw Device: /dev/nvme0n1>
-starmie: ssh: connect to host 10.1.3.208 port 22: No route to host
-clush: krabby,starmie (2): exited with exit code 255
 ```
 
 

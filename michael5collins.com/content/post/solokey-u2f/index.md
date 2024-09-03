@@ -19,6 +19,7 @@ categories:
 tags:
 - security keys
 - cybersecurity
+- guide
 - 2fa
 - linux
 ---
