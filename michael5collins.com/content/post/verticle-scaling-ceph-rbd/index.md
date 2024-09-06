@@ -1,7 +1,7 @@
 ---
-title: "Vertical Scaling with Ceph RBD, a Poor Man's MooseFSPro"
-description: "Giving myself some rudimentary HA with my MooseFS community edition cluster."
-summary: "Yadda yadda Ceph RBD, moosefs community bla bla"
+title: "A Poor Man's MooseFS Pro (Vertical Scaling with Ceph RBD)"
+description: "A guide on setting up Ceph RBD with Proxmox and using that to give my single MooseFS master node some basic fail over."
+summary: "MooseFS community edition is great, but you don't get the high availability feature of having multiple master nodes that MooseFS Pro enables. As a cheaper alternative, I'll be setting up Ceph RBD with Proxmox and using that to give my single master node some basic fail over."
 date: '2024-09-03'
 aliases:
 - moosefs-community-ha
@@ -25,7 +25,7 @@ tags:
 ---
 
 
-## Vertical Scaling with Ceph RBD, a Poor Man's MooseFSPro
+## A Poor Man's MooseFS Pro (Vertical Scaling with Ceph RBD)
 
 ---
 
@@ -44,11 +44,11 @@ If you want to learn more about MooseFS you can also checkout my [comparison wit
 
 I have a 5x node MooseFS cluster compromised of 4x low power arm64 machines and a Proxmox VM with physical disk passthrough for the chunkservers. With a seperate Proxmox VM called 'pikachu' for the MooseFS master. (All my MooseFS and Proxmox hosts have Pokemon names btw, sorry if that's annoying.)
 
-*** need a pick of helios64 bays
+![My Helios64 devices, low power arm64 systems that act as MooseFS chunkservers.](./moosefs-helios-chunkservers.png)
 
 I have a 4x node Proxmox cluster, that is compromised of 2x microATX machines and a Chatreey NUC. Each has 64GB of non-ECC RAM and a ~6 core AMD 3000/4000 series processor with integrated graphics.
 
-*** pick of eevee perhaps
+![My Proxmox host Eevee, a low power NUC device that I run VMs on.](./eevee-proxmox.png)
 
 
 ## Installing Ceph
@@ -61,7 +61,7 @@ To start I'll have to setup Ceph RBD with the 3x 1TB Samsung Red NVMe drives I h
 
 
 On all 3x Proxmox hosts, install the community edition of Ceph:
-```
+```bash
 pcadmin@jigglypuff:~$ sudo nano /etc/apt/sources.list.d/ceph.list 
 pcadmin@jigglypuff:~$ sudo cat /etc/apt/sources.list.d/ceph.list 
 deb http://download.proxmox.com/debian/ceph-reef bookworm no-subscription
@@ -74,7 +74,7 @@ https://pve.proxmox.com/wiki/Deploy_Hyper-Converged_Ceph_Cluster
 
 
 Install Ceph reef edition without an enterprise subscription on all 3x nodes:
-```
+```bash
 pcadmin@eevee:~$ sudo pveceph install --repository no-subscription --version reef
 ...
 After this operation, 176 MB of additional disk space will be used.
@@ -87,19 +87,19 @@ Do you want to continue? [Y/n] y
 ---
 
 Initialise a cluster:
-```
+```bash
 pcadmin@eevee:~$ sudo pveceph init --network 10.1.1.0/16 --min_size 2 --size 3
 pcadmin@eevee:~$
 ```
 
 We run into our first error:
-```
+```bash
 pcadmin@eevee:~$ sudo pveceph mon create
 Could not connect to ceph cluster despite configured monitors
 ```
 
 Had to cleanup old config to get further (I had installed Ceph RBD here before with Proxmox):
-```
+```bash
 pcadmin@eevee:~$ sudo systemctl stop ceph-mon@eevee
 pcadmin@eevee:~$ sudo systemctl stop ceph.target
 pcadmin@eevee:~$ sudo rm -rf /etc/ceph/*; \
@@ -122,7 +122,7 @@ command '/bin/systemctl start ceph-mon@eevee' failed: exit code 1
 ```
 
 I then had to undo the reset-failed counter to get the first monitor up:
-```
+```bash
 pcadmin@eevee:~$ sudo systemctl reset-failed ceph-mon@eevee.service
 pcadmin@eevee:~$ sudo systemctl start ceph-mon@eevee.service
 pcadmin@eevee:~$ sudo journalctl -xeu ceph-mon@eevee.service
@@ -137,7 +137,7 @@ Sep 01 11:56:42 eevee systemd[1]: Started ceph-mon@eevee.service - Ceph cluster 
 ---
 
 Nice, our first monitor is up! Now to make a monitor on all 3x hosts:
-```
+```bash
 pcadmin@jigglypuff:~$ sudo pveceph mon create
 ...
 pcadmin@gastly:~$ sudo pveceph mon create
@@ -149,7 +149,7 @@ pcadmin@gastly:~$ sudo pveceph mon create
 We now see the Ceph section in the Proxmox GUI is alive and giving us a status now.
 
 I set up managers on all 3x hosts:
-```
+```bash
 pcadmin@workstation:~$ clush -bg proxmox sudo pveceph mgr create
 ...
 starting service 'ceph-mgr@eevee.service'
@@ -168,7 +168,7 @@ starting service 'ceph-mgr@jigglypuff.service'
 ---
 
 Dig up the UUIDs of the NVMe's we want to use for RBD:
-```
+```bash
 pcadmin@workstation:~$ clush -bg proxmox sudo lsblk
 ---------------
 eevee
@@ -186,8 +186,8 @@ jigglypuff
 /dev/nvme0n1: UUID="a20f6fa3-617b-40bf-ae77-57c9e9f819b2" BLOCK_SIZE="4096" TYPE="ext4"
 ```
 
-Finally we can zap then add all our NVMe drives (this is important to do if the devices were used previously in a Ceph cluster):
-```
+Finally we can zap then add all our NVMe drives (zaping is important to do if the devices were used previously in another Ceph cluster):
+```bash
 pcadmin@workstation:~$ clush -bg proxmox sudo ceph-volume lvm zap /dev/nvme0n1 --destroy
 krabby: pcadmin@10.1.3.203: Permission denied (publickey).
 eevee: --> Zapping: /dev/nvme0n1
@@ -202,31 +202,41 @@ jigglypuff: --> Zapping successful for: <Raw Device: /dev/nvme0n1>
 gastly: --> Zapping successful for: <Raw Device: /dev/nvme0n1>
 ```
 
+![](./finished-ceph-rbd-cluster.png)
 
-
-
-We're left with a very basic 3 node cluster.
+We're left with a very basic 3 node RBD cluster.
 
 
 ## Configuring the Proxmox Storage Pool
 
 Configure the 'Pool' in Proxmox.
 
-[]()
+![Here we see the new Pool we've created with our Ceph RBD cluster.](./creating-a-pool-after.png)
 
 
 ## Configure the Proxmox HA Rule
 
 Configure the 'HA' failover in Proxmox.
 
+![Here we see out new HA group, that we'll be adding the MooseFS master VM too.](./setup-ha-group2.png)
+
 
 ## Copy the MooseFS Masters Disk to Ceph RBD
 
+We can now move our MooseFS master VM to Ceph RBD. First power down the VM. Then select the VM > Hardware > Disk Action > Move Storage. Then just follow the prompts to migrate it to our new storage Pool.
+
+![T](./move-masters-virtual-disk-to-rbd-2.png)
 
 
-## Start MooseFS Master
+## Add VM to HA Group
+
+Finally, we then add the VM in question to our new HA group, letting it start up the VM again.
+
+![](./move-masters-virtual-disk-to-rbd-3.png)
 
 
+## Finished!
+
+![](./moosefs-master-back-up-with-ha.png)
 
 There we go, a poor man's solution to adding high availability to MooseFS community edition.
-
