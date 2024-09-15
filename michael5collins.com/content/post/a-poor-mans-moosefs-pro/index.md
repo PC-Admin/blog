@@ -26,8 +26,6 @@ tags:
 ---
 
 
-## A Poor Man's MooseFS Pro (Vertical Scaling with Ceph RBD)
-
 ---
 
 MooseFS community edition is great, but you don't get the high availability feature of having multiple master nodes that MooseFSPro enables.
@@ -249,7 +247,7 @@ Finally, we then add the VM in question to our new HA group, letting it start up
 
 In the overarching Datacentre tab, select 'HA', in the 'Resources' row click 'Add'. 
 
-<img src="./add-vm-to-ha-group-3.png" alt="Not how I've raised the 'Max. Restart' and 'Max. Relocate' values here."></img>
+<img src="./add-vm-to-ha-group-3.png" alt="Note how I've raised the 'Max. Restart' and 'Max. Relocate' values here."></img>
 
 
 ## Finished!
