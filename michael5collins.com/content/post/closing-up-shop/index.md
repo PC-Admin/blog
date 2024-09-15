@@ -1,5 +1,5 @@
 ---
-title: "Closing up Shop"
+title: "Closing down Perthchat.org"
 description: "As one chapter ends, another can begin..."
 summary: "As interesting as it has been we've found ourselves at a crossroad, the administrative and financial costs of continuing this service have risen. While the personal situations and priorities of the volunteers involved (particularly myself) have changed. Today we regretfully inform the public that the service is coming to an end."
 date: '2023-08-22'
@@ -9,8 +9,8 @@ author: 'Michael Collins'
 usePageBundles: true
 
 featureImage: 'Sunsets_over_the_beaches.jpg'
-# featureImageAlt: 'Description of image' # Alternative text for featured image.
-# featureImageCap: 'This is the featured image.' # Caption (optional).
+featureImageAlt: 'As one chapter ends, another can begin...' # Alternative text for featured image.
+featureImageCap: 'As one chapter ends, another can begin...' # Caption (optional).
 thumbnail: 'Sunsets_over_the_beaches.jpg' # Image in lists of posts.
 shareImage: 'Sunsets_over_the_beaches.jpg' # For SEO and social media snippets.
 
@@ -20,10 +20,6 @@ tags:
 - perthchat
 ---
 
-
-
-
-## Closing down Perthchat.org
 
 ---
 
