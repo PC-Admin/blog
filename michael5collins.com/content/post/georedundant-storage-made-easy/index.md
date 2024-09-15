@@ -19,6 +19,7 @@ categories:
 tags:
 - ceph
 - georedundancy
+- guide
 - distributed storage
 - linux
 ---

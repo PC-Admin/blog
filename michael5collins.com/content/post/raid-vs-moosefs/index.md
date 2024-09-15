@@ -93,4 +93,4 @@ Here we see my own MooseFS cluster that combines a consumer grade amd64 computer
 
 In conclusion, while RAID has been a popular choice for many years, it is not without its drawbacks. RAID can be dangerous and can cause more downtime when compared to MooseFS Community Edition or Pro. MooseFS offers multiple host redundancy ensuring there's no single point of failure, efficient atomic snapshotting, high reliability, parallelism, and scalability. These features make MooseFS an excellent choice for organizations looking to store and manage large amounts of data while minimizing the risk of downtime and data loss. Overall, these features make MooseFS a superior option for organizations looking for a reliable and efficient storage system.
 
-Are you considering deploying MooseFS as a network storage solution for your company? If so, I invite you to schedule a complimentary consultation with me to explore the ways in which MooseFS could enhance your business.
+Are you interested in running MooseFS? You might also enjoy my more [recent article about configuring basic failover with MooseFS Community Edition](https://michael5collins.com/post/vertical-scaling-ceph-rbd/).
