@@ -17,10 +17,10 @@ shareImage: 'moosefs-proxmox-ai-garbage.png' # For SEO and social media snippets
 
 categories:
 - technical
+- guide
 tags:
 - ceph
 - moosefs
-- guide
 - distributed storage
 - linux
 ---

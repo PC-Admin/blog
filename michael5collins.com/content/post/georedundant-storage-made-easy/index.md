@@ -16,10 +16,10 @@ shareImage: 'ceph-cover.png' # For SEO and social media snippets.
 
 categories:
 - technical
+- guide
 tags:
 - ceph
 - georedundancy
-- guide
 - distributed storage
 - linux
 ---

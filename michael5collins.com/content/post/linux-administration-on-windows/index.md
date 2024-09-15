@@ -16,11 +16,11 @@ shareImage: 'win10-iamjcat-dd0dnmn.png' # For SEO and social media snippets.
 
 categories:
 - technical
+- guide
 tags:
 - windows
 - linux
 - devops
-- guide
 ---
 
 

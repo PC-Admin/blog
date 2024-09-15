@@ -16,10 +16,10 @@ shareImage: 'solokey-diagram.png' # For SEO and social media snippets.
 
 categories:
 - technical
+- guide
 tags:
 - security keys
 - cybersecurity
-- guide
 - 2fa
 - linux
 ---
