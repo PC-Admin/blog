@@ -4,6 +4,7 @@ description: "A guide on setting up Ceph RBD with Proxmox and using that to give
 summary: "MooseFS community edition is great, but you don't get the high availability feature of having multiple master nodes that MooseFS Pro enables. As a cheaper alternative, I'll be setting up Ceph RBD with Proxmox and using that to give my single master node some basic fail over."
 date: '2024-09-03'
 aliases:
+- verticle-scaling-ceph-rbd
 - moosefs-community-ha
 author: 'Michael Collins'
 usePageBundles: true
