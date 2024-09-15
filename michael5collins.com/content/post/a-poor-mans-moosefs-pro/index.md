@@ -260,6 +260,6 @@ In the overarching Datacentre tab, select 'HA', in the 'Resources' row click 'Ad
 
 There we go, a cheaper solution to adding some high availability to MooseFS community edition then buying the Pro version.
 
-__Please note: that for a production setup, this is not advisable!__ You would be much better off buying Moose Pro. MooseFS masters aren't meant to run in hypervised environments it slows them down, and using vertical scaling as a solution here is more hazardous.
+__Please note: that for a production setup, this is not advisable!__ You would be much better off buying Moose Pro. MooseFS masters aren't meant to run in hypervised environments, it slows them down. Also using vertical scaling as a solution here is more hazardous.
 
 You have been warned! :)
