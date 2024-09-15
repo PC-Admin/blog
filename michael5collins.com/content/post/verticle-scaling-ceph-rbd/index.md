@@ -42,13 +42,13 @@ If you want to learn more about MooseFS you can also checkout my [comparison wit
 
 ---
 
-I have a 5x node MooseFS cluster compromised of 4x low power arm64 machines and a Proxmox VM with physical disk passthrough for the chunkservers. With a seperate Proxmox VM called 'pikachu' for the MooseFS master. (All my MooseFS and Proxmox hosts have Pokemon names btw, sorry if that's annoying.)
+I have a 5x node MooseFS cluster compromised of 4x low power arm64 machines and a Proxmox VM with physical disk passthrough for the chunkservers. With a seperate Proxmox VM called 'pikachu' for the MooseFS master. (My host naming scheme is gen 1 Pokemon btw.)
 
 ![My Helios64 devices, low power arm64 systems that act as MooseFS chunkservers.](./moosefs-helios-chunkservers.png)
 
 I have a 4x node Proxmox cluster, that is compromised of 2x microATX machines and a Chatreey NUC. Each has 64GB of non-ECC RAM and a ~6 core AMD 3000/4000 series processor with integrated graphics.
 
-![My Proxmox host Eevee, a low power NUC device that I run VMs on.](./eevee-proxmox.png)
+![My Proxmox host Eevee, a low power NUC device that I run VMs on. To make both NVMe slots available for storage pools, Proxmox is actually installed on a USB 3.0 drive!](./eevee-proxmox.png)
 
 
 ## Installing Ceph
@@ -98,7 +98,7 @@ pcadmin@eevee:~$ sudo pveceph mon create
 Could not connect to ceph cluster despite configured monitors
 ```
 
-Had to cleanup old config to get further (I had installed Ceph RBD here before with Proxmox):
+Had to cleanup an old config to get further (I had installed Ceph RBD here previously with Proxmox):
 ```bash
 pcadmin@eevee:~$ sudo systemctl stop ceph-mon@eevee
 pcadmin@eevee:~$ sudo systemctl stop ceph.target
@@ -209,34 +209,56 @@ We're left with a very basic 3 node RBD cluster.
 
 ## Configuring the Proxmox Storage Pool
 
+---
+
 Configure the 'Pool' in Proxmox.
 
-![Here we see the new Pool we've created with our Ceph RBD cluster.](./creating-a-pool-after.png)
+<img src="./creating-a-pool-after.png" alt="Here we see the new Pool we've created with our Ceph RBD cluster."></img>
 
 
 ## Configure the Proxmox HA Rule
 
+---
+
 Configure the 'HA' failover in Proxmox.
 
-![Here we see out new HA group, that we'll be adding the MooseFS master VM too.](./setup-ha-group2.png)
+In the overarching Datacentre tab > HA > Groups > Create
+
+<img src="./setup-ha-group2.png" alt="Here we see out new HA group, that we'll be adding the MooseFS master VM too."></img>
 
 
 ## Copy the MooseFS Masters Disk to Ceph RBD
 
-We can now move our MooseFS master VM to Ceph RBD. First power down the VM. Then select the VM > Hardware > Disk Action > Move Storage. Then just follow the prompts to migrate it to our new storage Pool.
+---
 
-![T](./move-masters-virtual-disk-to-rbd-2.png)
+We can now move our MooseFS master VM to Ceph RBD. 
+
+First power down the VM. 
+
+Then select the VM > Hardware > Disk Action > Move Storage. Then just follow the prompts to migrate it to our new storage Pool.
+
+![](./move-masters-virtual-disk-to-rbd-2.png)
 
 
 ## Add VM to HA Group
 
+---
+
 Finally, we then add the VM in question to our new HA group, letting it start up the VM again.
 
-![](./move-masters-virtual-disk-to-rbd-3.png)
+In the overarching Datacentre tab, select 'HA', in the 'Resources' row click 'Add'. 
+
+<img src="./add-vm-to-ha-group-3.png" alt="Not how I've raised the 'Max. Restart' and 'Max. Relocate' values here."></img>
 
 
 ## Finished!
 
+---
+
 ![](./moosefs-master-back-up-with-ha.png)
 
-There we go, a poor man's solution to adding high availability to MooseFS community edition.
+There we go, a cheaper solution to adding some high availability to MooseFS community edition then buying the Pro version.
+
+__Please note: that for a production setup, this is not advisable!__ You would be much better off buying Moose Pro. MooseFS masters aren't meant to run in hypervised environments it slows them down, and using vertical scaling as a solution here is more hazardous.
+
+You have been warned! :)
