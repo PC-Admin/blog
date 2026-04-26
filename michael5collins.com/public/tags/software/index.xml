@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Michael5Collins</title>
+    <link>http://localhost:1313/tags/software/</link>
+    <description>Recent content in Software on Michael5Collins</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Michael Collins</copyright>
+    <lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Perthchat&#39;s New Android App</title>
+      <link>http://localhost:1313/post/new-perthchat-android-app/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/new-perthchat-android-app/</guid>
+      <description>
+        
+          
+            Today we’re proud to announce an expansion to Perthchat’s service, our new Android application!
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>YouTube-DL Removed From GitHub After DCMA Notice</title>
+      <link>http://localhost:1313/post/youtube-dl-removed-from-github-after-dcma-notice/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/youtube-dl-removed-from-github-after-dcma-notice/</guid>
+      <description>
+        
+          
+            Friday night on the 23rd of October the ‘Recording Industry Association of America, Inc. (RIAA)’ sent a DMCA request to GitHub asking that the popular YouTube downloading software ‘youtube-dl’ be taken down. 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

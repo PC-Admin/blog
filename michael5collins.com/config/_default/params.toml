@@ -1,6 +1,9 @@
 # enable search
 enableSearch = false
 
+# blog directory name, used for ld+json structured data
+blogDir = "post"
+
 # socials
 twitter = "@michael5collins"
 largeTwitterCard = false # set to true if you want to show a large twitter card image. The default is a small twitter card image

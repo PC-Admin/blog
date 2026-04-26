@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technical on Michael5Collins</title>
+    <link>http://localhost:1313/categories/technical/</link>
+    <description>Recent content in Technical on Michael5Collins</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Michael Collins</copyright>
+    <lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/technical/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Poor Man&#39;s MooseFS Pro: Vertical Scaling with Ceph RBD</title>
+      <link>http://localhost:1313/post/a-poor-mans-moosefs-pro/</link>
+      <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/a-poor-mans-moosefs-pro/</guid>
+      <description>
+        
+          
+            MooseFS community edition is great, but you don&#39;t get the high availability feature of having multiple master nodes that MooseFS Pro enables. As a cheaper alternative, I&#39;ll be setting up Ceph RBD with Proxmox and using that to give my single master node some basic fail over.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Linux Administration on Windows</title>
+      <link>http://localhost:1313/post/linux-administration-on-windows/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/linux-administration-on-windows/</guid>
+      <description>
+        
+          
+            How I managed to configure my Windows 10 machine to make Linux administration tasks as smooth as possible. Learn how I configured SSH, terminal, Git and Visual Studio for a user experience that was similar to the Ubuntu machines I&#39;m used too.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Ceph&#39;s Stretch Mode: Georedundant Storage Made Easy!</title>
+      <link>http://localhost:1313/post/georedundant-storage-made-easy/</link>
+      <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/georedundant-storage-made-easy/</guid>
+      <description>
+        
+          
+            We explore Ceph&#39;s powerful &#39;Stretch Mode&#39; feature, which simplifies georedundant storage setup. Learn how Stretch Mode enables efficient data replication across failure domains, ensuring data redundancy and integrity for your storage infrastructure.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>ChatGPT comes to Perthchat!</title>
+      <link>http://localhost:1313/post/chatgpt-comes-to-perthchat/</link>
+      <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/chatgpt-comes-to-perthchat/</guid>
+      <description>
+        
+          
+            Perthchat.org, a public Matrix service catering to Western Australians since 2017, has announced the integration of a ChatGPT bot, it uses a cutting-edge language model by OpenAI.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Solokey U2F</title>
+      <link>http://localhost:1313/post/solokey-u2f/</link>
+      <pubDate>Sun, 12 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/solokey-u2f/</guid>
+      <description>
+        
+          
+            I share my experience of enhancing my digital security by using Solokey and U2F authentication. Discover how these security keys and two-factor authentication methods can help protect your online accounts from unauthorized access.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>RAID vs MooseFS</title>
+      <link>http://localhost:1313/post/raid-vs-moosefs/</link>
+      <pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/raid-vs-moosefs/</guid>
+      <description>
+        
+          
+            Comparing RAID and MooseFS storage solutions, highlighting the risks associated with RAID and the benefits of switching to MooseFS. Discover how MooseFS offers enhanced redundancy, reliability, scalability, performance, and data integrity for your business&#39;s storage needs.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
