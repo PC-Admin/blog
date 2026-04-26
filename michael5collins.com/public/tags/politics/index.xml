@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Politics on Michael5Collins</title>
+    <link>http://localhost:1313/tags/politics/</link>
+    <description>Recent content in Politics on Michael5Collins</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Michael Collins</copyright>
+    <lastBuildDate>Sun, 17 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/politics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Perth Vaccine Mandate Protest Sees Large Attendance</title>
+      <link>http://localhost:1313/post/perth-vaccine-mandate-protest-sees-large-attendance/</link>
+      <pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/perth-vaccine-mandate-protest-sees-large-attendance/</guid>
+      <description>
+        
+          
+            This Saturday&#39;s vaccine mandate protest saw over a thousand people attend, a considerably higher turnout than previous protests held elsewhere under lockdown conditions.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>YouTube-DL Removed From GitHub After DCMA Notice</title>
+      <link>http://localhost:1313/post/youtube-dl-removed-from-github-after-dcma-notice/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/youtube-dl-removed-from-github-after-dcma-notice/</guid>
+      <description>
+        
+          
+            Friday night on the 23rd of October the ‘Recording Industry Association of America, Inc. (RIAA)’ sent a DMCA request to GitHub asking that the popular YouTube downloading software ‘youtube-dl’ be taken down. 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

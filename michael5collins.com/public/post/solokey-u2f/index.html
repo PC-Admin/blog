@@ -11,6 +11,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 <title>Solokey U2F | Michael5Collins</title>
 <meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -28,6 +29,38 @@
 <meta property="og:title" content="Solokey U2F" />
 <meta property="og:description" content="How I secured my digital life with Solokey and U2F authentication." />
 <meta property="og:image" content="http://localhost:1313/post/solokey-u2f/solokey-diagram.png" />
+  <meta name="keywords" content="security keys,cybersecurity,2fa,linux" />
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage":"http:\/\/localhost:1313\/post\/solokey-u2f\/",
+      "name": "Michael5Collins",
+      "headline": "Solokey U2F",
+      "description": "How I secured my digital life with Solokey and U2F authentication.",
+      "url": "http:\/\/localhost:1313\/post\/solokey-u2f\/",
+      "datePublished": "2023-03-12T00:00:00Z",
+      "dateModified": "2023-03-12T00:00:00Z",
+      "keywords": ["security keys","cybersecurity","2fa","linux"],
+        "articleSection": ["technical","guide"],
+      "author": {
+        "@type": "Person",
+        "name": "map[name:Michael Collins photo:images\/profile.png]"
+      },
+      "image":{
+        "@type":"ImageObject",
+        "url": "http:\/\/localhost:1313\/post\/solokey-u2f\/solokey-diagram.png"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "logo": {
+          "@type":"ImageObject",
+          "url": "http:\/\/localhost:1313\/logos\/logo.png"
+        },
+        "name": "Michael5Collins"
+      }
+    }
+  </script>
 
 <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/icons/favicon-32x32.png">
@@ -37,15 +70,15 @@
 
 
 
-<link rel="preload" href="http://localhost:1313/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity = "sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" as="style" crossorigin="anonymous">
+<link rel="preload" href="http://localhost:1313/css/styles.dc38388a8f0b890e788bd3a99b7495d14e7d5ac4359ed3b49abeb778497863b284ad4cc7e496ef58c84139295f9bafed82f5a41345eda86bd2d429cccb7c2596.css" integrity = "sha512-3Dg4io8LiQ54i9Opm3SV0U59WsQ1ntO0mr63eEl4Y7KErUzH5JbvWMhBOSlfm6/tgvWkE0XtqGvS1CnMy3wllg==" as="style" crossorigin="anonymous">
 
 
 
-<link rel="preload" href="http://localhost:1313/en/js/bundle.0d036cc8bad2080f4c50d1ad5c14f6106a56b6d12ac69457cb6219c7fcb4181e1ecae48e5a844297763c02a18426d0f0811d2cb368792861cb42618660b894d9.js" as="script" integrity=
-"sha512-DQNsyLrSCA9MUNGtXBT2EGpWttEqxpRXy2IZx/y0GB4eyuSOWoRCl3Y8AqGEJtDwgR0ss2h5KGHLQmGGYLiU2Q==" crossorigin="anonymous">
+<link rel="preload" href="http://localhost:1313/en/js/bundle.467a54cbd5cb9856ccda4eb3a0d0e8cc7c99ffe68cee9df42a248adefa4b86f9f690bebc5aa9bb53b2bb1015fc8da3f7426cc4eb31bcc5cee122925639ee79bc.js" as="script" integrity=
+"sha512-RnpUy9XLmFbM2k6zoNDozHyZ/&#43;aM7p30KiSK3vpLhvn2kL68Wqm7U7K7EBX8jaP3QmzE6zG8xc7hIpJWOe55vA==" crossorigin="anonymous">
 
 
-<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity="sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/styles.dc38388a8f0b890e788bd3a99b7495d14e7d5ac4359ed3b49abeb778497863b284ad4cc7e496ef58c84139295f9bafed82f5a41345eda86bd2d429cccb7c2596.css" integrity="sha512-3Dg4io8LiQ54i9Opm3SV0U59WsQ1ntO0mr63eEl4Y7KErUzH5JbvWMhBOSlfm6/tgvWkE0XtqGvS1CnMy3wllg==" crossorigin="anonymous">
 
   </head>
   <body
@@ -156,10 +189,12 @@
 </svg>
 </span>
     <span class="post_date">
-      Mar 12, 2023</span>
+      Mar 12, 2023	  
+    </span>
     <span class="post_time"> · 6 min read</span><span>&nbsp;· <a href='http://localhost:1313/tags/security-keys/' title="security keys" class="post_tag button button_translucent">security keys
         </a><a href='http://localhost:1313/tags/cybersecurity/' title="cybersecurity" class="post_tag button button_translucent">cybersecurity
         </a><a href='http://localhost:1313/tags/2fa/' title="2fa" class="post_tag button button_translucent">2fa
+        </a><a href='http://localhost:1313/tags/linux/' title="linux" class="post_tag button button_translucent">linux
         </a>
     </span>
     <span class="page_only">&nbsp;·
@@ -213,7 +248,9 @@
       decoding="async"
       alt=""
       
-        class="image_figure image_featured image_internal image_unprocessed"
+        class="image_figure image_featured image_internal image_processed"
+        width="1280"
+        height="510"
         src="http://localhost:1313/post/solokey-u2f/solokey-diagram.png"
       
       
@@ -387,7 +424,6 @@
 
 
 
-
   </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
@@ -404,9 +440,11 @@
       <a href='http://localhost:1313/about/' class="button mt-1" role="button" title='Read More'>Read More</a>
 
     
-    
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
+      <li>
+        <a href="http://localhost:1313/post/a-poor-mans-moosefs-pro/" class="nav-link" title="A Poor Man&#39;s MooseFS Pro: Vertical Scaling with Ceph RBD">A Poor Man's MooseFS Pro: Vertical Scaling with Ceph RBD</a>
+      </li>
       <li>
         <a href="http://localhost:1313/post/linux-administration-on-windows/" class="nav-link" title="Linux Administration on Windows">Linux Administration on Windows</a>
       </li>
@@ -414,28 +452,37 @@
         <a href="http://localhost:1313/post/georedundant-storage-made-easy/" class="nav-link" title="Ceph&#39;s Stretch Mode: Georedundant Storage Made Easy!">Ceph's Stretch Mode: Georedundant Storage Made Easy!</a>
       </li>
       <li>
+        <a href="http://localhost:1313/post/closing-up-shop/" class="nav-link" title="Closing down Perthchat.org">Closing down Perthchat.org</a>
+      </li>
+      <li>
+        <a href="http://localhost:1313/post/chatgpt-comes-to-perthchat/" class="nav-link" title="ChatGPT comes to Perthchat!">ChatGPT comes to Perthchat!</a>
+      </li>
+      <li>
         <a href="http://localhost:1313/post/solokey-u2f/" class="nav-link" title="Solokey U2F">Solokey U2F</a>
       </li>
       <li>
         <a href="http://localhost:1313/post/raid-vs-moosefs/" class="nav-link" title="RAID vs MooseFS">RAID vs MooseFS</a>
       </li>
+      <li>
+        <a href="http://localhost:1313/post/why-was-voluntary-assisted-dying-act-isnt-enough/" class="nav-link" title="Why WA&#39;s Voluntary Assisted Dying Act Isn&#39;t Enough">Why WA's Voluntary Assisted Dying Act Isn't Enough</a>
+      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
-        <a href='http://localhost:1313/categories/distributed-storage/' class="post_tag button button_translucent" title="distributed storage">
-          DISTRIBUTED STORAGE
-          <span class="button_tally">2</span>
+        <a href='http://localhost:1313/categories/news/' class="post_tag button button_translucent" title="news">
+          NEWS
+          <span class="button_tally">6</span>
         </a>
         
-        <a href='http://localhost:1313/categories/cybersecurity/' class="post_tag button button_translucent" title="cybersecurity">
-          CYBERSECURITY
-          <span class="button_tally">1</span>
+        <a href='http://localhost:1313/categories/technical/' class="post_tag button button_translucent" title="technical">
+          TECHNICAL
+          <span class="button_tally">6</span>
         </a>
         
-        <a href='http://localhost:1313/categories/linux-administration/' class="post_tag button button_translucent" title="linux administration">
-          LINUX ADMINISTRATION
-          <span class="button_tally">1</span>
+        <a href='http://localhost:1313/categories/guide/' class="post_tag button button_translucent" title="guide">
+          GUIDE
+          <span class="button_tally">4</span>
         </a>
         
         
@@ -444,8 +491,43 @@
     <div>
       <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
       <nav class="tags_nav">
+        <a href='http://localhost:1313/tags/linux/' class="post_tag button button_translucent" title="linux">
+          LINUX
+          <span class="button_tally">5</span>
+        </a>
+        
         <a href='http://localhost:1313/tags/distributed-storage/' class="post_tag button button_translucent" title="distributed storage">
           DISTRIBUTED STORAGE
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='http://localhost:1313/tags/perthchat/' class="post_tag button button_translucent" title="perthchat">
+          PERTHCHAT
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='http://localhost:1313/tags/ceph/' class="post_tag button button_translucent" title="ceph">
+          CEPH
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='http://localhost:1313/tags/moosefs/' class="post_tag button button_translucent" title="moosefs">
+          MOOSEFS
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='http://localhost:1313/tags/perth/' class="post_tag button button_translucent" title="perth">
+          PERTH
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='http://localhost:1313/tags/politics/' class="post_tag button button_translucent" title="politics">
+          POLITICS
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='http://localhost:1313/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
           <span class="button_tally">2</span>
         </a>
         
@@ -454,8 +536,13 @@
           <span class="button_tally">1</span>
         </a>
         
-        <a href='http://localhost:1313/tags/ceph/' class="post_tag button button_translucent" title="ceph">
-          CEPH
+        <a href='http://localhost:1313/tags/ai/' class="post_tag button button_translucent" title="ai">
+          AI
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='http://localhost:1313/tags/android/' class="post_tag button button_translucent" title="android">
+          ANDROID
           <span class="button_tally">1</span>
         </a>
         
@@ -474,37 +561,94 @@
           <span class="button_tally">1</span>
         </a>
         
-        <a href='http://localhost:1313/tags/index/' class="post_tag button button_translucent" title="index">
-          INDEX
-          <span class="button_tally">1</span>
-        </a>
         
-        <a href='http://localhost:1313/tags/linux-administration/' class="post_tag button button_translucent" title="linux administration">
-          LINUX ADMINISTRATION
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='http://localhost:1313/tags/moosefs/' class="post_tag button button_translucent" title="moosefs">
-          MOOSEFS
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='http://localhost:1313/tags/raid/' class="post_tag button button_translucent" title="raid">
-          RAID
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='http://localhost:1313/tags/security-keys/' class="post_tag button button_translucent" title="security keys">
-          SECURITY KEYS
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='http://localhost:1313/tags/windows/' class="post_tag button button_translucent" title="windows">
-          WINDOWS
-          <span class="button_tally">1</span>
-        </a>
-        
-        
+        <br>
+        <div class="post_tags_toggle button">All Tags</div>
+        <div class="post_tags">
+          <div class="tags_list">
+            
+            <a href='http://localhost:1313/tags/2fa/' class=" post_tag button button_translucent" data-position=1 title="2fa">2FA<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/ai/' class=" post_tag button button_translucent" data-position=1 title="ai">AI<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/android/' class=" post_tag button button_translucent" data-position=1 title="android">ANDROID<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/ceph/' class=" post_tag button button_translucent" data-position=2 title="ceph">CEPH<span class="button_tally">2</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/cybersecurity/' class=" post_tag button button_translucent" data-position=1 title="cybersecurity">CYBERSECURITY<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/devops/' class=" post_tag button button_translucent" data-position=1 title="devops">DEVOPS<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/distributed-storage/' class=" post_tag button button_translucent" data-position=3 title="distributed storage">DISTRIBUTED STORAGE<span class="button_tally">3</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/georedundancy/' class=" post_tag button button_translucent" data-position=1 title="georedundancy">GEOREDUNDANCY<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/health/' class=" post_tag button button_translucent" data-position=1 title="health">HEALTH<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/index/' class=" post_tag button button_translucent" data-position=1 title="index">INDEX<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/linux/' class=" post_tag button button_translucent" data-position=5 title="linux">LINUX<span class="button_tally">5</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/moosefs/' class=" post_tag button button_translucent" data-position=2 title="moosefs">MOOSEFS<span class="button_tally">2</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/perth/' class=" post_tag button button_translucent" data-position=2 title="perth">PERTH<span class="button_tally">2</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/perthchat/' class=" post_tag button button_translucent" data-position=3 title="perthchat">PERTHCHAT<span class="button_tally">3</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/politics/' class=" post_tag button button_translucent" data-position=2 title="politics">POLITICS<span class="button_tally">2</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/raid/' class=" post_tag button button_translucent" data-position=1 title="raid">RAID<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/security-keys/' class=" post_tag button button_translucent" data-position=1 title="security keys">SECURITY KEYS<span class="button_tally">1</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/software/' class=" post_tag button button_translucent" data-position=2 title="software">SOFTWARE<span class="button_tally">2</span>
+            </a>
+            
+            
+            <a href='http://localhost:1313/tags/windows/' class=" post_tag button button_translucent" data-position=1 title="windows">WINDOWS<span class="button_tally">1</span>
+            </a>
+            
+            <div class="tags_sort"><span title="sort alphabetically">[A~Z]</span><span title="sort by count">[0~9]</span>
+            </div>
+            <span class="tags_hide"><svg class="icon">
+            <use xlink:href="#closeme"></use>
+          </svg></span>
+          </div>
+        </div>
       </nav>
     </div>
   </section>
@@ -586,6 +730,14 @@
     fill="#000000"
     d="m 12.616925,5.6916583 v 4.3315297 h -1.71607 V 5.8189683 c 0,-0.88624 -0.37289,-1.33607 -1.1187604,-1.33607 -0.82467,0 -1.23799,0.53361 -1.23799,1.58875 v 2.30122 h -1.70594 v -2.30122 c 0,-1.05514 -0.4134,-1.58875 -1.23808,-1.58875 -0.74587,0 -1.11876,0.44983 -1.11876,1.33607 v 4.2042197 h -1.71607 V 5.6916583 c 0,-0.88527 0.22541,-1.58876 0.67817,-2.10922 0.46689,-0.52047 1.07833,-0.78727 1.83735,-0.78727 0.87816,0 1.54317,0.33752 1.98288,1.01267 l 0.42744,0.71655 0.42753,-0.71655 c 0.43961,-0.67515 1.10463,-1.01267 1.9828704,-1.01267 0.75893,0 1.37037,0.2668 1.83735,0.78727 0.45268,0.52046 0.67808,1.22395 0.67808,2.10922"/>
   </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 530" id="bluesky" >
+    <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="ko-fi">
+    <path fill="#ffffff" d="M4.5,9.8527H32.7947a0,0,0,0,1,0,0v19.225a9.07,9.07,0,0,1-9.07,9.07H13.57a9.07,9.07,0,0,1-9.07-9.07V9.8527A0,0,0,0,1,4.5,9.8527Z"/>
+    <path fill="#000000" d="M12.197,25.9493l6.45,6.45,6.45-6.45a8.2,8.2,0,0,0,2.4016-5.798h0a4.5082,4.5082,0,0,0-4.212-4.5459,4.4262,4.4262,0,0,0-4.64,4.4209,4.4261,4.4261,0,0,0-4.64-4.4209,4.5082,4.5082,0,0,0-4.212,4.5459h0A8.2,8.2,0,0,0,12.197,25.9493Z"/>
+    <path fill="#ffffff" d="M32.7947,9.8527H35.73a7.77,7.77,0,0,1,0,15.5394H32.7947"/>
+  </svg>
+  </symbol>
 </svg>
 
 <footer class="footer">
@@ -602,6 +754,6 @@
   </div>
 </footer>
 
-<script type="text/javascript" src="http://localhost:1313/en/js/bundle.0d036cc8bad2080f4c50d1ad5c14f6106a56b6d12ac69457cb6219c7fcb4181e1ecae48e5a844297763c02a18426d0f0811d2cb368792861cb42618660b894d9.js" integrity="sha512-DQNsyLrSCA9MUNGtXBT2EGpWttEqxpRXy2IZx/y0GB4eyuSOWoRCl3Y8AqGEJtDwgR0ss2h5KGHLQmGGYLiU2Q==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="http://localhost:1313/en/js/bundle.467a54cbd5cb9856ccda4eb3a0d0e8cc7c99ffe68cee9df42a248adefa4b86f9f690bebc5aa9bb53b2bb1015fc8da3f7426cc4eb31bcc5cee122925639ee79bc.js" integrity="sha512-RnpUy9XLmFbM2k6zoNDozHyZ/&#43;aM7p30KiSK3vpLhvn2kL68Wqm7U7K7EBX8jaP3QmzE6zG8xc7hIpJWOe55vA==" crossorigin="anonymous"></script>
   </body>
 </html>
