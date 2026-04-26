@@ -1,0 +1,8 @@
+# Hugo build output - never commit
+michael5collins.com/public/
+
+# Hugo generated asset cache - never commit
+michael5collins.com/resources/_gen/
+
+# Downloaded theme clone (managed separately)
+hugo-clarity/
