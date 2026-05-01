@@ -59,10 +59,10 @@ The AI powered IDE, also apparently the default IDE of choice at Nvidia. Cursor 
 
 The official VSCode extension from Anthropic, it allows similar functionality to Cursor. Letting you review, test, debug and develop code automatically and locally with the Claude model.
 
-- Slower, seems to run tasks more sequentially.
-- More transparent, shows you the bash command and asks you for permission before running it.
-- Also has a feature-rich CLI mode, which can be extremely powerful if you're already good at bash.
-- The API tokens for the basic plan seem to last longer.
+- Slower, seems to run tasks more sequentially
+- More transparent, shows you the bash command and asks you for permission before running it
+- Also has a feature-rich CLI mode, which can be extremely powerful if you're already good at bash
+- The API tokens for the basic plan seem to last longer
 
 ## Everything's a Programming Problem
 
