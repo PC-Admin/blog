@@ -55,7 +55,7 @@ Out of the box SSH forwarding seems to be broken on Windows 10 and 11, you'll ke
 
 To fix this you need to install the beta version of OpenSSH:
 ```
-PS C:\Users\mcollins1> winget install -e --id Microsoft.OpenSSH.Beta
+PS C:\Users\mcollins1> winget install -e --id Microsoft.OpenSSH.Preview
 ```
 
 
