@@ -45,9 +45,9 @@ If you've never tried one of these tools. The next time you're dealing with any 
 
 ## Which AI Tool is #1?
 
-I am not going to state that either tool is "better" than the other, they're both fantastic honestly. I'll instead just note the differences that I have experienced after trying both rather extensively in the last 6 months.
+I am not going to state that either tool is "better" than the other, they're both comparable and fantastic. I'll instead just note the differences that I have experienced after trying both rather extensively in the last 6 months.
 
-For my specific role, doing linux administration and devops work. Claude is the best LLM to use in Cursor, so it's often a contest of what's the most optimal way to utilise Claude.
+Claude is the best LLM to use in Cursor IDE, so it's often a contest of what's the most optimal way to utilise Claude.
 
 ### Cursor IDE
 
@@ -56,7 +56,7 @@ The AI powered IDE, also apparently the default IDE of choice at Nvidia. Cursor 
 - The UX is a fair bit more integrated into the VSCode environment.
 - Faster, seems to use more parallelism of agents
 - Does better looking and clearer code-base walk-throughs
-- Has more models (Claude/ChatGPT/Gemini and their in-house model)
+- Has more models (Claude/ChatGPT/Gemini and their in-house model Composer)
 - Better at searching the internet seemingly (particularly with ChatGPT/Gemini)
 
 ### Claude Code
