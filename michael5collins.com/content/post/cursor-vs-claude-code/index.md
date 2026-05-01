@@ -66,6 +66,6 @@ The official VSCode extension from Anthropic, it allows similar functionality to
 
 ## Everything's a Programming Problem
 
-It really seems like a wide array of problems in life can now be reduced into a folder containing relevant data/scripts, then these agentic AI tools can "cook" you up a solution (and double check it too!). I'm not yet sure where the ceiling is to this, but it's been very entertaining to try and find it. I have so far been able to do a tonne of programming, some complicated bookkeeping, and have fought RMA's and other bureaucratic disputes.
+It really seems like a wide array of problems in life can now be reduced into a folder containing relevant data/scripts, then these agentic AI tools can "cook" you up a solution (and double check it too!). I'm not yet sure where the ceiling is to this, but it's been very entertaining to try and find it. I have so far been able to do a tonne of programming, some complicated bookkeeping, and have fought RMA's and other bureaucratic disputes. I even used them to build my first robot that feeds and monitors my fish.
 
 If you've never tried one of these tools, the next time you're dealing with any overly complex problem, sort all the relevant data into a folder and give them a try yourself.
