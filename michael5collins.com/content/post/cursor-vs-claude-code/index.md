@@ -8,11 +8,11 @@ aliases:
 author: 'Michael Collins'
 usePageBundles: true
 
-featureImage: 'cursor_vs_claude_code_header.png'
+featureImage: './cursor_vs_claude_code_header.png'
 # featureImageAlt: 'Description of image' # Alternative text for featured image.
 # featureImageCap: '' # Caption (optional).
-thumbnail: 'cursor_vs_claude_code_header.png' # Image in lists of posts.
-shareImage: 'cursor_vs_claude_code_header.png' # For SEO and social media snippets.
+thumbnail: './cursor_vs_claude_code_header_compressed.png' # Image in lists of posts.
+shareImage: './cursor_vs_claude_code_header_compressed.png' # For SEO and social media snippets.
 
 categories:
 - technical
@@ -49,10 +49,11 @@ Claude is the best LLM to use in Cursor IDE, so it's often a contest of what's t
 
 The AI powered IDE, also apparently the default IDE of choice at Nvidia. Cursor is a full fork of VSCode, giving it deep access to editor internals that a standard VSCode extension cannot reach — enabling features like inline diffs and background agents.
 
-- The UX is a fair bit more integrated into the VSCode environment.
+- The UX is a fair bit more integrated into the VSCode environment
 - Faster, seems to use more parallelism of agents
 - Does better looking and clearer code-base walk-throughs
 - Has more models (Claude/ChatGPT/Gemini and their in-house model Composer)
+- Allows you to run the same queries against multiple models, or switch model throughout a converation
 - Better at searching the internet seemingly (particularly with ChatGPT/Gemini)
 
 ### Claude Code
